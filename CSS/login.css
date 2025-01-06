@@ -1,0 +1,273 @@
+body {
+  
+    /* justify-content: center; */
+ 
+    background-image: url('../images/movie-night-by-pool-whole-family.jpg'); 
+    background-size: cover;
+
+    
+}
+
+.login-container {
+    background-color: #0b2747; /* Blue background for the container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 40%;
+    color: white;
+    height:300px
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: white; /* White text color */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.test{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    width:107%;
+
+}
+
+@media (max-width:320px){
+
+    .login-container {
+        background-color: #0b2747;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 74%;
+        color: white;
+        height: 284px;
+    }
+    
+    h1 {
+        margin-bottom: 20px;
+        color: white; /* White text color */
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 5px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 25px;
+    }
+    
+    
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+    }
+    
+    .test{
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        width:107%;
+    
+    }
+
+}
+@media (max-width:426px){
+    .login-container {
+        background-color: #0b2747;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 74%;
+        color: white;
+        height: 284px;
+    }
+    
+    h1 {
+        margin-bottom: 20px;
+        color: white; /* White text color */
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 5px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 25px;
+    }
+    
+    
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+    }
+    
+    .test{
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        width:107%;
+    
+    }
+}
+@media (max-width: 1024px) and (min-width: 769px){
+    .login-container {
+        background-color: #0b2747; /* Blue background for the container */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 40%;
+        color: white;
+        height:335px
+    }
+    
+    h1 {
+        margin-bottom: 20px;
+        color: white; /* White text color */
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 5px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 25px;
+    }
+    
+    
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+    }
+    
+    .test{
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        width:107%;
+    
+    }
+}
+
+@media(min-width:2300px){
+    .login-container {
+        background-color: #0b2747; /* Blue background for the container */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 35%;
+        color: white;
+        height:500px
+    }
+    
+    h1 {
+        margin-bottom: 20px;
+        color: white; /* White text color */
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 41px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 45px;
+    }
+   
+    
+    
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+    }
+    
+    .test{
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        width:107%;
+    
+    }
+}

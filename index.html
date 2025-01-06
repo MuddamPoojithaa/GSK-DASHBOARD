@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="./JS/icons.js"></script>
+    <link rel="stylesheet" href="./CSS/index.css">
+    
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/testing.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+      <div id="modal-container" class="modal">
+      <div class="modal-content">
+      <span class="close-btn">&times;</span>
+          <div id="poster-container">
+              <img src="./images/gskchangedlogo.png">
+          </div>
+      </div>
+  </div>
+  
+    <div>
+      <div id="whatsapp-container">
+        <a id="whatsapp-link" href="https://api.whatsapp.com/send?phone=8801559999" target="_blank">
+            <img src="./images/whatsappicon.png" alt="WhatsApp">
+        </a>
+    </div>   
+
+    
+  <div class="topbar">
+    <div class="details">
+         
+      <div class="icons"><ion-icon name="call" class="icons"></ion-icon></div>
+      <div class="phone"><a href="tel:+918801559999" class="phone"><b>+91 8801559999</b></a></div>
+       
+      
+      
+      <div><ion-icon name="call" class="icons"></ion-icon></div>
+      <div class="phone"><a href="tel:+919392294468" class="phone"><b>+91 9392294468</b></a></div>
+   
+     </div>
+     
+     <div class="details2">
+      <div class="icon-mail"><i class="fa-solid fa-envelope"></i></div>
+      <div class="phone"><a href="mailto:gskinfra@gmail.com" class="phone"><b>gskinfradevelopers99@gmail.com</b></a></div>
+     </div>
+  
+    <div class="social-media-icons">
+    <div class="social-media1"><a href=""><ion-icon name="logo-facebook" class="social-media1"></ion-icon></a></div>
+    <div class="social-media2"><a href=""><ion-icon name="logo-instagram" class="social-media2"></ion-icon></div></a>
+    <div class="social-media3"><a href=""><ion-icon name="logo-whatsapp" class="social-media3"></ion-icon></div></a>
+    <div class="social-media4"><ion-icon name="logo-linkedin" class="social-media4"></ion-icon></div>
+   </div>
+  </div>
+
+  
+
+      <nav>
+        
+        <div class="logo">
+            <img src="./images/GSK final logo.jpg "/>
+        </div>
+        
+        <ul id="menuList">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="details.html">DETAILS</a></li>
+            <li><a href="amenities.html">AMENITIES</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+            
+           
+            
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+      <div>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/IMAGE 1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/Group 4076.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/IMAGE 3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <!-- <div class="carousel-item">
+                    <img src="./images/Group 4054.png" class="d-block w-100" alt="...">
+                  </div> -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div class="browsecontainer">
+            <h1 class="browseheading"><b>EXPLORE HOMES IN HYDERABAD</b></h1>
+            <div class="container-wrapper">
+            <div class="container">
+              <a href="#browseimagecontent" class="underline"><p><b>HOUSES FOR SALES/PURCHASE</b></p></a>
+          </div>
+          <div class="container">
+          <a href="#browseimagecontent" class="underline"><p><b>PLOTS FOR SALES/PURCHASE</b></p></a>
+          </div>
+          <div class="container">
+           <a href="#browseimagecontent" class="underline"><p><b> AGRICULTURE LANDS FOR SALE</b></p></a>
+          </div>
+          <div class="container">
+              <a href="#browseimagecontent" class="underline"><p><b>CONSTRUCTIONS FOR SALE</b></p></a>
+          </div>
+          </div>
+          <input type="file" id="fileInput" style="display: none;" accept="image/*">
+            <div class="browseimagecontainer" id="browseimagecontent">
+              
+              
+              <div class="browseimage1" >
+              <div class="namebox">
+                        <a href="../GSKDevelopers/projects.html"><p><b>HOUSES FOR SALES/PURCHASE</b></p></a>
+                    </div>
+                      <p class="browseimagecontent">Lorem Ipsum is simply dummy
+                         text of the
+
+                        printing and 
+                        typesetting industry
+                       . Lorem Ipsum has been 
+                       </p>
+                      
+                       
+                    </div>
+                <div class="browseimage2">
+                    <div class="namebox">
+                      <a href="../GSKDevelopers/projects.html"><p><b>PLOTS FOR SALES/PURCHASE</b></p></a>
+                    </div>
+                    <p class="browseimagecontent">Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry
+                       . Lorem Ipsum has been 
+                       </p>
+                </div>
+                <div class="browseimage3">
+                    <div class="namebox">
+                      <a href="../GSKDevelopers/projects.html"> <p><b>AGRICULTURE LANDS FOR SALE</b></p></a>
+                    </div>
+                    <p class="browseimagecontent">Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry
+                       . Lorem Ipsum has been 
+                       </p>
+                </div>
+                <div class="browseimage4">
+                    <div class="namebox ">
+                      <a href="../GSKDevelopers/projects.html"><p><b>CONSTRUCTIONS FOR SALE</b></p></a>
+                    </div>
+                    <p class="browseimagecontent">Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry
+                       . Lorem Ipsum has been 
+                       </p>
+                </div>
+            </div>
+        </div>
+      
+        
+        
+
+
+      <div class="sellcontainer">
+            <div class="sellcontentcontainer">
+                <img src="./images/sell1.png"/>
+                <div class="logo1">
+                  <img src="./images/gskchangedlogo.png"/>
+              </div>
+                <h3>OPEN PLOTS / AGRICULTURE LANDS</h3>
+                <a style="margin-left: auto;margin-right: 5px;"><a id="whatsapp-link" href="https://api.whatsapp.com/send?phone=8801559999" target="_blank">
+                  <img src="./images/whatsappicon.png" alt="WhatsApp">
+              </a></a>
+                
+                <p>A real estate agent can provide you with a clear breakdown of costs so that you can avoid surprise expenses.</p>
+                <div class="button-container">
+                <button onclick="navigateToNextPage()">View all</button>
+                <button onclick="navigateToNextPage()">Know More</button>
+                <button onclick="showEnquireForm()">Download Brochure</button>
+        </div>
+        
+              </div>
+            <div class="sellcontentcontainer">
+                <img src="./images/sell2.png"/>
+                <div class="logo1">
+                  <img src="./images/gskchangedlogo.png"/>
+              </div>
+              <h3>INDEPENDENT HOUSES / CONSTRUCTIONS</h3>
+              <a style="margin-left: auto;margin-right: 5px;"><a id="whatsapp-link" href="https://api.whatsapp.com/send?phone=8801559999" target="_blank">
+                <img src="./images/whatsappicon.png" alt="WhatsApp">
+            </a></a>
+              
+               <p>A real estate agent can provide you with a clear breakdown of costs so that you can avoid surprise expenses.</p>
+                
+                <div class="button-container">
+                  <button onclick="navigateToNextPage()">View all</button>
+                  <button onclick="navigateToNextPage()">Know More</button>
+                  <button onclick="showEnquireForm()">Download Brochure</button>
+         
+                  
+          
+                  
+          </div>
+          
+            </div>
+            <div class="sellcontentcontainer">
+                <img src="./images/trend1.png"/>
+                <div class="logo1">
+                  <img src="./images/gskchangedlogo.png"/>
+              </div>
+              
+              <h3>APPARTMENT FLATES PURCHASE </h3>
+              <a style="margin-left: auto;margin-right: 5px;"><a id="whatsapp-link" href="https://api.whatsapp.com/send?phone=8801559999" target="_blank">
+                <img src="./images/whatsappicon.png" alt="WhatsApp">
+            </a></a>
+                <p>A real estate agent can provide you with a clear breakdown of costs so that you can avoid surprise expenses.</p>
+                
+                <div class="button-container">
+                  <button onclick="navigateToNextPage()">View all</button>
+                  <button onclick="navigateToNextPage()">Know More</button>
+                  <button onclick="showEnquireForm()">Download Brochure</button>
+          </div>
+          
+            </div>
+            <div class="sellcontentcontainer">
+              <img src="./images/trend2.png"/>
+              <div class="logo1">
+                <img src="./images/gskchangedlogo.png"/>
+            </div>
+              
+              
+              <h3>COMMERCIAL PLOTS PURCHASE </h3>
+              <a style="margin-left: auto;margin-right: 5px;"><a id="whatsapp-link" href="https://api.whatsapp.com/send?phone=8801559999" target="_blank">
+                <img src="./images/whatsappicon.png" alt="WhatsApp">
+            </a></a>
+              <p>A real estate agent can provide you with a clear breakdown of costs so that you can avoid surprise expenses.</p>
+             
+              <div class="button-container">
+                <button onclick="navigateToNextPage()">View all</button>
+                <button onclick="navigateToNextPage()">Know More</button>
+                <button onclick="showEnquireForm()">Download Brochure</button>
+        </div>
+        
+            </div>
+        </div>
+       
+       
+        <div id="enquireFormModal" class="modal2">
+          
+          <div class="modal-content2">
+            
+              <span class="close" onclick="closeEnquireForm()">&times;</span>
+              
+              <h2>ENQUIRE NOW</h2>
+           
+              <form id="enquireForm" action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="076f4d9c-1d0f-4334-91d0-4f7b566bb825">
+                
+                  <input type="text" id="name" name="name" placeholder="ENTER YOUR NAME" required>
+      
+                  <input type="email" id="email" name="email" placeholder="YOUR EMAIL" required>
+      
+                  <select id="country" name="country" required>
+                      <option value="India">INDIA</option>
+                      <option value="USA">USA</option>
+                      <option value="Canada">CANADA</option>
+                      <!-- Add more options as needed -->
+                  </select>
+      
+                  <div class="phone-container">
+                      <span>+91</span>
+                      <input type="tel" id="phone" name="phone" placeholder="ENTER PHONE NUMBER" required>
+                  </div>
+      
+                  <button type="submit">SUBMIT</button>
+              
+              </form>
+          </div>
+      </div>
+   
+      <script>
+  
+  
+  function showEnquireForm() {
+    document.getElementById("enquireFormModal").style.display = "block";
+}
+
+function closeEnquireForm() {
+    document.getElementById("enquireFormModal").style.display = "none";
+}
+
+window.onclick = function(event) {
+    const modal = document.getElementById("enquireFormModal");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+      </script>
+        
+        <div class="selltrendscontainer">
+          <div class="sell">
+            <img src="./images/sell1.png"/>
+            
+            <p>Sell Sell Trends Trends Need a Bargain? 4 Markets Where Homebuyers Can Still Find…<a style="margin-left: auto;margin-right: 5px;"><a id="whatsapp-link" href="https://api.whatsapp.com/send?phone=8801559999" target="_blank">
+              <img src="./images/whatsappicon.png" alt="WhatsApp">
+          </a></a> </p >
+              
+           
+            
+            
+          </div>
+          <div class="sell">
+            <img src="./images/sell2.png"/>
+            <p> Why Pets Are Popping Up in Listing Photos—but This Cutene…  <a style="margin-left: auto;margin-right: 5px;">View Details  <a id="whatsapp-link" href="https://api.whatsapp.com/send?phone=8801559999" target="_blank">
+              <img src="./images/whatsappicon.png" alt="WhatsApp">
+          </a></a></p>
+          </div>
+          <div class="trends">
+            <img src="./images/trend1.png"/>
+            <p>We Salute You: The Top 10 Housing Markets for Military and Veteran… <a  style="margin-left: auto;margin-right: 5px;">View Details  <a id="whatsapp-link" href="https://api.whatsapp.com/send?phone=8801559999" target="_blank">
+              <img src="./images/whatsappicon.png" alt="WhatsApp">
+          </a></a></p>
+          </div>
+          <div class="trends">
+            <img src="./images/trend2.png"/>
+            <p>Exclusive Video: The ‘7 Little Johnstons’ Absolutely Had To Get… <a  style="margin-left: auto;margin-right: 5px;">View Details  <a id="whatsapp-link" href="https://api.whatsapp.com/send?phone=8801559999" target="_blank">
+              <img src="./images/whatsappicon.png" alt="WhatsApp">
+          </a></a></p>
+          </div>
+        </div>
+        <div class="sellingresourcescontainer">
+          <h1 class="sellingheading">Selling Resources</h1>
+          <div class="sellingcontainer">
+            <div class="sellingimage">
+              <img id="sellingImage" src="./images/sellinghouse.png"/>
+            </div>
+            <div class="sellingcontent">
+              <h1 id="sellingTitle">Best interior paint colors for selling your house.</h1>
+              <p id="sellingDescription">GSK Developers reveal that dark grey may attract more prospective buyers - and higher offers - when you are getting ready to sell.</p>
+              <button onclick="navigateToWhatsApp()">Contact us</button>
+             
+            
+              
+              <div class="contactdetails">
+                <div class="contactdetails2">
+                  <div><ion-icon name="call" class="icons"> </ion-icon></div>
+                <div class="contactinfo"><p><b>+91 88015 59999</b></p></div>
+              </div>
+              <div class="contactdetails2">
+                <div><ion-icon name="call"  class="icons"></ion-icon></div>
+              <div class="contactinfo"><p><b>+91 93922 94468</b>
+              </p></div>
+              </div>
+            <div class="contactdetails2">
+              <div><ion-icon name="mail" class="icons"></ion-icon></div>
+              <div class="contactinfo"><b>gskinfradevelopers99@gmail.com</b></div>
+            </div>
+            
+            <div class="arrowcontainer" ><a id="whatsapp-link" href="https://api.whatsapp.com/send?phone=8801559999" target="_blank">
+              <img src="./images/whatsappicon.png" alt="WhatsApp">
+          </a>
+              
+                <i id="leftArrow" class="bi bi-arrow-left-circle"></i>
+                <i id="rightArrow" class="bi bi-arrow-right-circle"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="preparecontainer">
+          <div class="prepareheading">
+            <h1>Preparing to Sell</h1>
+            
+            
+          </div>
+          <div class="imagesdetailscontainer">
+            <div class="imagesubcontainer">
+              <img src="./images/prepareimg1.png"/>
+              <div>
+                <!-- <h1>2 days read</h1> -->
+                <p>Buying and Selling :Steps to 
+                  Selling a House for new begin</p>
+              </div>
+            </div>
+            <div class="imagesubcontainer">
+              <img src="./images/prepareimg2.png"/>
+              <div>
+              
+                
+                <p>Buying and Selling a House at the
+                  Same Time: Where to Begin</p>
+              </div>
+            </div>
+          
+            
+            
+              <!-- Second last image container with upload option -->
+              <div class="imagesubcontainer">
+                  <img src="./images/aerial-shot-city-buildings-toa-payoh-singapore-blue-sky.jpg">
+                <!--<img id="uploadImage1" src="./images/aerial-shot-city-buildings-toa-payoh-singapore-blue-sky.jpg" alt="Upload your image 1">-->
+                <!--<input type="file" id="imageUpload1" accept="image/*" class="upload-btn">-->
+                <div>
+                  
+                  <p>Tips for Selling a House With Pets at Home</p>
+                </div>
+              </div>
+          
+              <!-- Last image container with upload option -->
+             
+               <div class="imagesubcontainer">
+                  <img src="./images/prepareimg4.png">
+                <!--<img id="uploadImage1" src="./images/aerial-shot-city-buildings-toa-payoh-singapore-blue-sky.jpg" alt="Upload your image 1">-->
+                <!--<input type="file" id="imageUpload1" accept="image/*" class="upload-btn">-->
+                <div>
+                  
+                  <p>Tips for Selling a House With Pets at Home</p>
+                </div>
+              </div>
+          
+             
+             
+            </div>
+          </div>
+     
+     <script>
+      const BASE_URL = 'http://localhost:3000';
+
+// Fetch and add properties to the .imagesdetailscontainer without overwriting existing items
+function addProperties() {
+  fetch(`${BASE_URL}/properties`)
+    .then(response => response.json())
+    .then(properties => {
+      const container = document.querySelector('.imagesdetailscontainer'); // Make sure we select the right container
+      
+      // Loop through each property and append it to the container
+      properties.forEach(property => {
+        const propertyDiv = document.createElement('div');
+        propertyDiv.className = 'imagesubcontainer';
+
+        // Set property content with fetched data
+        propertyDiv.innerHTML = `
+          <img src="${BASE_URL}${property.image}" alt="${property.name}" />
+          <div>
+          
+            
+            <p>${property.description || property.name}</p>
+          </div>
+        `;
+        
+        // Append the new property content
+        container.appendChild(propertyDiv);
+      });
+    })
+    .catch(error => console.error('Error fetching properties:', error));
+}
+
+// Call addProperties to add new properties to the existing content when page loads
+document.addEventListener('DOMContentLoaded', () => {
+  addProperties();  // Add properties after the page loads
+});
+
+     </script>
+          
+          
+         
+
+
+        <div class="footersection">
+            <div class="aboutuscontainer">
+             <h1><b>About Us</b></h1>
+               
+        <div class="logo4">
+            <img src="./images/GSK LOGO CIRCLE.png"/>
+        </div>
+             
+             <div class="iconcontainer"><a id="whatsapp-link" href="https://api.whatsapp.com/send?phone=8801559999">
+              <img src="./images/whatsappicon.png" alt="WhatsApp">
+          </a>
+              <i class="bi bi-envelope" id="emailIcon"></i>
+               <i class="bi bi-facebook"  id="facebookIcon"></i>
+               <i class="bi bi-instagram" id="instagramIcon"></i>
+               <i class="bi bi-linkedin" id="linkedinIcon"></i>
+             </div>
+                        
+            </div>
+            <div class="Quicklinkscontainer">
+              <h1><b>QuickLinks</b></h1>
+              <a href="index.html">Home</a>
+              <a href="about.html">AboutUs</a>
+              <a href="projects.html">Projects</a>
+              <a href="details.html">Details</a>
+              <a href="amenities.html">Amenities</a>
+              <a href="contact.html">ContactUs</a>
+            </div>
+            <div class="Projectscontainer">
+             
+              
+                  <h1><b>Contact</b></h1>
+                
+                  
+                  <div class="contact2">
+                    <div class="phone">
+                      <div><ion-icon name="call" class="icons"> </ion-icon></div>
+                    <div class="phone1" ><p><b>8801559999</b></p></div>
+                  </div>
+                  <div class="phone">
+                    <div><ion-icon name="call"  class="icons"></ion-icon></div>
+                  <div class="phone1"><p><b>9392294468</b></p></div>
+                </div>
+                <div class="phone">
+                  <div><ion-icon name="call"  class="icons"></ion-icon></div>
+                <div class="phone1"><p><b>9849757205</b></p></div>
+              </div>
+            </div>
+            </div>
+            <div class="GetInTouchcontainer">
+              <div class="upiconcontainer">
+              <h1><b>Get In Touch</b></h1>
+              <a href="index.html" id="scrollToTop"> <i class="bi bi-arrow-up-square"></i></a>
+              </div>
+           <h2><b>Email</b></h2>
+     <div class="email">
+      <div><ion-icon name="mail" class="icons" ></ion-icon></div>
+      <div class="phone2"><b>gskinfradevelopers99@gmail.com</b></div>
+    </div>
+    <h2><b>Location</b></h2>
+  <div class="Location">
+  <div><ion-icon name="location" class="icons"></ion-icon></div>
+  <div><b>Office:H.No8-1-113,SBI Bank MainRoad Rampally(V) Keesara Medchal Malkajgiri (D)-501301</b></div>
+  </div>
+  </div>
+  <div class="footer-text">
+    <center>
+    <p>GSK INFRA DEVELOPERS is a new generation real estate development company in Hyderabad – known for setting trends in residential and commercial property development with an aim to provide the best quality properties.</p>
+  </center>
+  </div>
+  </div>
+    </div>
+   
+
+    
+
+
+
+<div class="copyright">     
+  <p>Copyright © 2024 GSK INFRA-Developers. All rights reserved <i class="fa fa-heart" aria-hidden="true"></i> Designed by Advoize. 
+  </p>
+</div>
+
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <script >
+     
+     document.addEventListener('DOMContentLoaded', function() {
+    var modal = document.getElementById('modal-container');
+    var closeBtn = document.querySelector('.close-btn');
+    var mainContent = document.getElementById('main-content');
+
+    closeBtn.onclick = function() {
+        modal.style.display = 'none';
+        mainContent.style.display = 'block'; 
+    };
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+            mainContent.style.display = 'block'; 
+        }
+    };
+});
+     
+
+     
+      
+    </script>
+    <script src="./JS/sellingcontainer.js"></script>
+    <script>
+      let menuList = document.getElementById("menuList")
+      menuList.style.maxHeight = "0px";
+
+      function toggleMenu(){
+          if(menuList.style.maxHeight == "0px")
+          {
+              menuList.style.maxHeight = "330px";
+          }
+          else{
+              menuList.style.maxHeight = "0px";
+          }
+      }
+      
+  </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          var scrollToTopBtn = document.getElementById('scrollToTop');
+      
+          scrollToTopBtn.addEventListener('click', function(e) {
+              e.preventDefault();
+              window.scrollTo({
+                  top: 0,
+                  behavior: 'smooth'
+              });
+          });
+      });
+      </script>
+        <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+        <script>
+          function navigateToNextPage() {
+              window.location.href = 'projects.html';
+          }
+          function navigatetocontactpage(){
+            window.location.href='contact.html';
+          }
+      </script>
+      <script>
+        function navigateToWhatsApp() {
+            var whatsappLink = "https://api.whatsapp.com/send?phone=9392294468";
+            window.open(whatsappLink, "_blank");
+        }
+    </script>
+    
+    
+</body>
+</html>
+

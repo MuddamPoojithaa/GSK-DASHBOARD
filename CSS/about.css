@@ -1,0 +1,1684 @@
+
+.aboutimg {
+    width: 100%; /* Full width of container */
+    height: auto; /* Maintain aspect ratio */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow for depth */
+    transition: transform 0.4s ease, opacity 0.4s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    opacity: 0;
+    transform: scale(0.95);
+    object-fit: cover; /* Ensures the image covers the container */
+    filter: brightness(90%); /* Slightly dimmed image */
+}
+
+/* Animation for when the image scrolls into view */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Apply animation */
+.aboutimg {
+    animation: fadeInUp 1.2s ease-out forwards;
+}
+
+/* Hover effects */
+.aboutimg:hover {
+    transform: scale(1.05);
+    opacity: 1;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35); /* Enhanced shadow on hover */
+    filter: brightness(100%); /* Brightens image on hover */
+}
+
+/* .realestatehyderabad{
+    padding-top: 30px;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-direction: row;
+}
+.realleft{
+    width: 70%;
+}
+.realright{
+    width: 30%;
+    text-align: center;
+}
+.realright img{
+    width: 80%;
+    height: 200px;
+} */
+.realestatehyderabad {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.realleft {
+    width: 50%;
+    padding: 20px;
+    font-size: 1.2em;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideInLeft 1.9s ease-in-out forwards;
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.realright {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.realleft p{
+    font-size: 16px;
+    line-height: 1.7;
+    color: black; /* Color for the paragraphs */
+    margin-bottom: 20px;
+
+}
+
+.realright img {
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.realright img:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+/* 
+.imagescontainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 550px;
+    margin: auto;
+}
+.subimagecontainer{
+    width: 45%;
+    height: 250px;
+    padding: 20px; 
+    margin: auto;
+}
+.subimagecontainer img{
+    width: 100%;
+    height: 250px;
+} */
+.imagescontainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 550px;
+    margin: auto;
+    gap: 10px; /* Space between image containers */
+    justify-content: space-between; /* Ensures even spacing */
+}
+
+.subimagecontainer {
+    width: 45%;
+    height: 250px;
+    margin: auto;
+    overflow: hidden; /* Prevents images from overflowing */
+    position: relative; /* Allows for layered effects */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.subimagecontainer img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Ensures the image covers the entire container */
+    transition: transform 0.3s ease-in-out;
+    border-radius: 8px; /* Adds rounded corners */
+}
+
+.subimagecontainer:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.2); /* Enhances shadow on hover */
+}
+
+.subimagecontainer:hover img {
+    transform: scale(1.1); /* Zoom-in effect on the image */
+}
+
+.subimagecontainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Dark overlay effect on hover */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.subimagecontainer:hover::before {
+    opacity: 1; /* Overlay appears on hover */
+}
+/* 
+.feedbackcontainer{
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+}
+.feedbackleft{
+    width: 45%;
+}
+.feedbackleft h1{
+    font-size: 20px;
+}
+.feedbackleft p{
+    font-size: 16px;
+}
+.ratingscontainer{
+    display: flex;
+    flex-direction: row;
+}
+.countcontainer p{
+    font-size: 20px;
+    
+    font-weight: bold;
+} */
+.feedbackcontainer {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+    background-color: #f9f9f9;
+}
+
+.feedbackleft {
+    width: 45%;
+    animation: slideInRight 1s ease-in-out;
+}
+
+.feedbackleft h1 {
+    font-size: 24px; /* Adjusted for better visibility */
+    color: #2d1a6a;
+    margin-bottom: 15px; /* Added spacing for better layout */
+}
+
+.feedbackleft p {
+    font-size: 18px; /* Adjusted for readability */
+    color: #555;
+    line-height: 1.6; /* Improved line spacing */
+    margin-bottom: 20px;
+}
+
+.ratingscontainer {
+    display: flex;
+    flex-direction: row;
+    gap: 40px; /* Added gap between the rating containers */
+    margin-top: 20px;
+}
+
+.countcontainer p:first-child {
+    font-size: 24px; /* Increased for emphasis */
+    color: #d81b60;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.countcontainer p:last-child {
+    font-size: 18px; /* Adjusted for consistency */
+    color: #2d1a6a;
+}
+
+/* Animation for text entering from right to left */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.companydetailscontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 40px;
+}
+.companyleft{
+    width: 40%;
+    text-align: center;
+}
+.companyleft p{
+    font-size: 14px;
+}
+.companyleft p2{
+    font-size: 25px;
+    color: #2d1a6a;
+    font-weight: 5000px;
+}
+.companyright{
+    width: 40%;
+   text-align: center;
+}
+.companyright p{
+    font-size: 14px;
+}
+.companyright img{
+    height: 300px;
+    width: 400px;
+} 
+
+.companydetailscontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 40px;
+    align-items: flex-start; /* Align items to the top */
+}
+
+/* Left section (Heading and Paragraphs) */
+.companyleft {
+    width: 50%;
+    text-align: left;
+}
+
+.companyleft h1, .companyleft p {
+    opacity: 0;
+    transform: translateX(-100%);
+  
+    transition: opacity 1s ease, transform 1s ease; /* Faster animation */
+    transition-delay: 0s; /* Initial delay for all elements */
+}
+
+.companyleft h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #d81b60; /* Color for the heading */
+    transition-delay: 0s; /* Slight delay for the heading */
+}
+
+.companyleft p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: black; /* Color for the paragraphs */
+    margin-bottom: 20px;
+}
+
+.companyleft p:nth-child(2) {
+    transition-delay: 0s; /* Delay for the first paragraph */
+}
+
+.companyleft p:nth-child(3) {
+    transition-delay: 0s; /* Delay for the second paragraph */
+}
+
+.companyleft.visible h1, 
+.companyleft.visible p {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Right section (Image and Paragraphs) */
+.companyright {
+    width: 40%;
+    text-align: center;
+}
+
+.companyright img {
+    width: 300%;
+    max-width: 400px;
+    border-radius: 0; /* Remove any border-radius for a clean look */
+    box-shadow: none; /* Remove shadow to maintain a clean appearance */
+    transition: transform 1s ease;
+    padding-top: 20%;
+    height: 100%;
+
+}
+
+.companyright img:hover {
+    transform: scale(1.1);
+}
+
+.companyright p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555; /* Ensure consistency with the left side text */
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s ease, transform 1s ease; /* Faster animation */
+    transition-delay: 0.3s; /* Initial delay for paragraphs */
+    
+}
+
+.companyright.visible p {
+    opacity: 1;
+    transform: translateX(0);
+}
+.bestcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.bestleft, .bestright {
+    opacity: 0;
+}
+
+.bestleft {
+    transform: translateX(100%);
+    animation: slideInFromRight 1s forwards;
+}
+
+.bestright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-100%);
+    animation: slideInFromLeft 1s forwards;
+    transition: transform 0.3s ease;
+}
+
+.bestright img {
+    width: 100%;
+    height: auto; /* Adjust based on your needs */
+    transition: transform 0.3s ease;
+}
+
+.bestright:hover img {
+    transform: scale(1.1); /* Zoom-in effect */
+}
+
+.bestleft h1 {
+   
+    font-size: 25px;
+    color: #2d1a6a;
+    font-weight: 5000px;
+}
+
+.bestleft p {
+   
+    font-size: 15px;
+
+    line-height: 1.6;
+    color: black; /* Color for the paragraphs */
+    margin-bottom: 20px;
+}
+
+/* Animations */
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.constantcontainer {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.constantleft {
+    width: 40%;
+    height: 300px;
+    overflow: hidden; /* Ensures the image doesn't overflow its container */
+}
+
+.constantleft img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire area without distortion */
+    transition: transform 0.5s ease, filter 0.5s ease, opacity 1s ease-in-out;
+    opacity: 0; /* Start hidden */
+}
+
+.constantleft.loaded img {
+    opacity: 1; /* Fade in the image once loaded */
+}
+
+.constantleft img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    filter: brightness(1.1); /* Slightly brightens the image on hover */
+}
+
+.constantright {
+    width: 40%;
+    opacity: 0; /* Start with the text hidden */
+    transform: translateX(-100%); /* Start the text off-screen to the left */
+}
+
+.constantright.loaded {
+    opacity: 1; /* Fade the text in */
+    transform: translateX(0); /* Slide the text to its final position */
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.constantright p {
+    
+    font-size: 15px;
+    line-height: 1.6;
+    color: black; /* Color for the paragraphs */
+    margin-bottom: 20px;
+}
+.locationcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    overflow: hidden;
+}
+
+
+
+
+.locationleft {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.locationright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    
+    
+}
+
+.locationright iframe {
+    width: 50%;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.locationright iframe:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.locationleft h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.locationleft p {
+   
+    font-size: 15px;
+    line-height: 1.6;
+    color: black; /* Color for the paragraphs */
+    margin-bottom: 20px;
+}
+
+/* Animations */
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.locationleft {
+    animation: slideInFromRight 1s forwards;
+}
+
+.locationright {
+    animation: slideInFromLeft 1s forwards;
+}
+.copyright{
+    background-color: rgb(55, 51, 51);
+    background-size: 100%;
+    color: white;
+    font-size: large;
+    text-align: center;
+    padding-bottom: 1%;
+    padding-top: 1%;
+  }
+  .copyright i{
+    color: red;
+  }
+
+  
+  
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+    .companydetailscontainer {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .companyleft, .companyright {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .companyright img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.bestcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+.bestleft{
+    width: 40%;
+}
+.bestleft p2{
+   
+    line-height: 1.6;
+    font-size: 25px;
+    color: #2d1a6a;
+    font-weight: 5000px;
+}
+.bestleft p {
+    font-size: 12px;
+}
+.bestright{
+    width: 40%;
+    height: 300px;
+    text-align: center;
+}
+.bestright img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.constantcontainer{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.constantleft {
+    width: 40%;
+    height: 300px;
+}
+.constantleft img{
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+.constantright {
+    width: 40%;
+}
+.constantright p{
+    font-size: 14px;
+}
+.locationcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+.locationleft{
+    width: 40%;
+}
+.locationleft h1{
+   font-size: 25px;
+    line-height: 1.6;
+    font-weight: 5000px;
+    color: #2d1a6a;
+}
+.locationleft p{
+    font-size: 12px;
+}
+.locationright{
+    width: 40%;
+}
+.locationright iframe{
+    width: 100%;
+    height: 300px;
+}
+.locationright iframe:hover{
+    opacity: 0.8;
+}
+
+
+@media (max-width:426px){
+    .aboutimg{
+        width: 100%;
+    }
+    .realestatehyderabad{
+        padding-top: 30px;
+        display: flex;
+        width: 80%;
+        margin: auto;
+        flex-direction: column;
+    }
+    .realleft{
+        width: 100%;
+    }
+    .realright{
+        width: 100%;
+        text-align: center;
+    }
+    .realright img{
+        width: 80%;
+        height: 200px;
+    }
+    .imagescontainer{
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        height: auto;
+        /* height: 550px; */
+        margin: auto;
+    }
+    .subimagecontainer{
+        width: 85%;
+        height: 250px;
+        overflow: hidden;
+        padding-top: 20px;
+        margin: auto;
+    }
+    .subimagecontainer img{
+        width: 100%;
+        height:100%;
+    }
+    .feedbackcontainer{
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        width: 95%;
+        margin: auto;
+        justify-content: space-around;
+    }
+    .feedbackleft{
+        width: 100%;
+    }
+    .feedbackleft h1{
+        font-size: 20px;
+    }
+    .feedbackleft p{
+        font-size: 16px;
+    }
+    .ratingscontainer{
+        display: flex;
+        flex-direction: row;
+    }
+    .countcontainer p{
+        font-size: 20px;
+        
+        font-weight: bold;
+    }
+    .feedbackright{
+        width: 100%;
+    }
+    .reviewername{
+        font-size: 20px;
+    }
+    .reviewerdesignation{
+        font-size: 12px;
+        color: gray;
+    }
+    .personphoto{
+        height: 75px;
+        width: 75px;
+    }
+    .reviewernamedesignation{
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+    }
+    .reviewernamedesignation p{
+        margin: 0;
+        line-height: 1.2;
+    }
+    .imagedesignation{
+        display: flex;
+        background-color: gainsboro;
+    }
+    .quotationimage{
+        height: 30px;
+        width: 30px;
+        margin-left: auto;
+    }
+    .feedbackright p{
+        font-size: 16px;
+    }
+    
+.companyleft p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: black; /* Color for the paragraphs */
+    margin-bottom: 20px;
+}
+.bestleft p {
+       
+    font-size: 15px;
+    line-height: 1.8;
+    color: black;
+}
+
+.constantright p{
+    font-size: 15px;
+    line-height: 1.7;
+    color: black; /* Color for the paragraphs */
+}
+.locationleft p{
+    font-size: 15px;
+    line-height: 1.7;
+    color: black; /* Color for the paragraphs */
+   
+}
+.realleft p{
+    font-size: 15px;
+    line-height: 1.7;
+    color: black; /* Color for the paragraphs */
+    margin-bottom: 20px;
+
+}
+.bestright img {
+    width: 100%;
+    height: 145%;
+    transition: transform 0.3s ease;
+  }
+  .companyright img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 0;
+    box-shadow: none;
+    transition: transform 1s ease;
+    padding-top: 0%;
+    height: 100%;
+  }
+}
+
+
+@media (min-width:426px) and (max-width:769px){
+    .aboutimg{
+        width: 100%;
+    }
+    .realestatehyderabad{
+        padding-top: 30px;
+        display: flex;
+        width: 100%;
+        margin: auto;
+        flex-direction: column;
+    }
+    .realleft{
+        width: 95%;
+        margin: auto;
+    }
+    .realright{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+    .realright img{
+        width: 95%;
+        height: 400px;
+    }
+    .imagescontainer{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        height: 550px;
+    margin-top: 40px;
+    }
+    .subimagecontainer{
+        width: 45%;
+        height: 250px;
+        /* padding: 20px; */
+        margin: auto;
+    }
+    .subimagecontainer img{
+        width: 100%;
+        height: 250px;
+    }
+    .feedbackcontainer{
+        display: flex;
+        flex-direction: row;
+        padding-top: 50px;
+        width: 80%;
+        margin: auto;
+        justify-content: space-around;
+    }
+    .feedbackleft{
+        width: 45%;
+    }
+    .feedbackleft h1{
+        font-size: 20px;
+    }
+    .feedbackleft p{
+        font-size: 16px;
+    }
+    .ratingscontainer{
+        display: flex;
+        flex-direction: row;
+    }
+    .countcontainer p{
+        font-size: 20px;
+        
+        font-weight: bold;
+    }
+    .feedbackright{
+        width: 45%;
+    }
+    .reviewername{
+        font-size: 20px;
+    }
+    .reviewerdesignation{
+        font-size: 12px;
+        color: gray;
+    }
+    .personphoto{
+        height: 75px;
+        width: 75px;
+    }
+    .reviewernamedesignation{
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+    }
+    .reviewernamedesignation p{
+        margin: 0;
+        line-height: 1.2;
+    }
+    .imagedesignation{
+        display: flex;
+        background-color: gainsboro;
+    }
+    .quotationimage{
+        height: 30px;
+        width: 30px;
+        margin-left: auto;
+    }
+    .feedbackright p{
+        font-size: 16px;
+    }
+    
+.companyleft p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: black; /* Color for the paragraphs */
+    margin-bottom: 20px;
+}
+.bestleft p {
+       
+    font-size: 15px;
+    line-height: 1.8;
+    color: black;
+}
+
+.constantright p{
+    font-size: 15px;
+    line-height: 1.7;
+    color: black; /* Color for the paragraphs */
+
+}
+.locationleft p{
+    font-size: 15px;
+    line-height: 1.7;
+    color: black; /* Color for the paragraphs */
+   
+}
+.realleft p{
+    font-size: 15px;
+    line-height: 1.7;
+    color: black; /* Color for the paragraphs */
+    margin-bottom: 20px;
+
+}
+.companyright img {
+    width: 300%;
+    max-width: 400px;
+    border-radius: 0;
+    box-shadow: none;
+    transition: transform 1s ease;
+    padding-top: 0%;
+    height: 100%;
+  }
+  .bestright img {
+    width: 100%;
+    height: 145%;
+    transition: transform 0.3s ease;
+  }
+
+}
+@media (min-width:769px) and (max-width:1025px){
+    .aboutimg{
+        width: 100%;
+    }
+    .realestatehyderabad{
+        padding-top: 30px;
+        display: flex;
+        width: 90%;
+        margin: auto;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .realleft{
+        width: 65%;
+    }
+    .realright{
+        width: 25%;
+        text-align: center;
+    }
+    .realright img{
+        width: 100%;
+        height: 300px;
+    }
+    .imagescontainer{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        height: 550px;
+        margin: auto;
+    }
+    .subimagecontainer{
+        width: 45%;
+        height: 250px;
+        /* padding: 20px; */
+        margin: auto;
+    }
+    .subimagecontainer img{
+        width: 100%;
+        height: 250px;
+    }
+    .feedbackcontainer{
+        display: flex;
+        flex-direction: row;
+        padding-top: 50px;
+        width: 80%;
+        margin: auto;
+        justify-content: space-around;
+    }
+    .feedbackleft{
+        width: 45%;
+    }
+    .feedbackleft h1{
+        font-size: 20px;
+    }
+    .feedbackleft p{
+        font-size: 16px;
+    }
+    .ratingscontainer{
+        display: flex;
+        flex-direction: row;
+    }
+    .countcontainer p{
+        font-size: 20px;
+        
+        font-weight: bold;
+    }
+    .feedbackright{
+        width: 45%;
+    }
+    .reviewername{
+        font-size: 20px;
+    }
+    .reviewerdesignation{
+        font-size: 12px;
+        color: gray;
+    }
+    .personphoto{
+        height: 75px;
+        width: 75px;
+    }
+    .reviewernamedesignation{
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+    }
+    .reviewernamedesignation p{
+        margin: 0;
+        line-height: 1.2;
+    }
+    .imagedesignation{
+        display: flex;
+        background-color: gainsboro;
+    }
+    .quotationimage{
+        height: 30px;
+        width: 30px;
+        margin-left: auto;
+    }
+    .feedbackright p{
+        font-size: 16px;
+    }
+    .companyleft p {
+        font-size: 13px;
+        line-height: 1.6;
+        color: black; /* Color for the paragraphs */
+        margin-bottom: 20px;
+    }
+    .companyright img{
+        width: 100%;
+      max-width: 400px;
+      border-radius: 0;
+      box-shadow: none;
+      transition: transform 1s ease;
+      padding-top: 47%;
+      height: 78%;
+        
+        
+    }
+    .realleft p{
+        font-size: 13px;
+        line-height: 1.7;
+        color: black; /* Color for the paragraphs */
+        margin-bottom: 20px;
+    
+    }
+    .realright img{
+        width: 100%;
+    height: 160px;
+    }
+}
+
+@media (min-width:1025px) and (max-width:1800px){
+    .aboutimg{
+        width: 100%;
+    }
+    .realestatehyderabad{
+        padding-top: 30px;
+        display: flex;
+        width: 80%;
+        margin: auto;
+        flex-direction: row;
+    }
+    .realleft{
+        width: 70%;
+    }
+    .realright{
+        width: 60%;
+        text-align: center;
+       
+        
+    }
+    .realright img{
+        width: 80%;
+        height: 300px;
+        margin-top: 2%;
+    }
+    
+.realleft p{
+    font-size: 16px;
+    line-height: 1.7;
+    color: black; /* Color for the paragraphs */
+    margin-bottom: 20px;
+
+}
+
+    .imagescontainer{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        height: 550px;
+        margin: auto;
+    }
+    .subimagecontainer{
+        width: 45%;
+        height: 250px;
+        /* padding: 20px; */
+        margin: auto;
+    }
+    .subimagecontainer img{
+        width: 100%;
+        height: 250px;
+    }
+    .feedbackcontainer{
+        display: flex;
+        flex-direction: row;
+        padding-top: 50px;
+        width: 80%;
+        margin: auto;
+        justify-content: space-around;
+    }
+    .feedbackleft{
+        width: 45%;
+    }
+    .feedbackleft h1{
+        font-size: 20px;
+    }
+    .feedbackleft p{
+        font-size: 16px;
+    }
+    .ratingscontainer{
+        display: flex;
+        flex-direction: row;
+    }
+    .countcontainer p{
+        font-size: 20px;
+        
+        font-weight: bold;
+    }
+    .feedbackright{
+        width: 45%;
+    }
+    .reviewername{
+        font-size: 20px;
+    }
+    .reviewerdesignation{
+        font-size: 12px;
+        color: gray;
+    }
+    .personphoto{
+        height: 75px;
+        width: 75px;
+    }
+    .reviewernamedesignation{
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+    }
+    .reviewernamedesignation p{
+        margin: 0;
+        line-height: 1.2;
+    }
+    .imagedesignation{
+        display: flex;
+        background-color: gainsboro;
+ 
+    }
+    .quotationimage{
+        height: 30px;
+        width: 30px;
+        margin-left: auto;
+    }
+    .feedbackright p{
+        font-size: 16px;
+    }
+
+    .companyright img{
+        height: 450px;
+        width: 500px;
+        max-width: 500px;
+    }
+    
+    .bestleft p {
+       
+        font-size: 16px;
+        line-height: 1.8;
+        color: black;
+    }
+    .constantright p{
+        font-size: 16px;
+        line-height: 1.7;
+        color: black; /* Color for the paragraphs */
+}
+    .locationleft p{
+        font-size: 16px;
+        line-height: 1.7;
+        color: black; /* Color for the paragraphs */
+       
+    }
+    
+}
+   
+@media (min-width:1800px) and (max-width:2300px){
+    .aboutimg{
+        width: 100%;
+    }
+    .realestatehyderabad{
+        padding-top: 30px;
+        display: flex;
+        width: 80%;
+        margin: auto;
+        flex-direction: row;
+    }
+    .realleft{
+        width: 70%;
+    }
+    .realright{
+        width: 60%;
+        text-align: center;
+       
+        
+    }
+    .realright img{
+        width: 80%;
+        height: 300px;
+        margin-top: 2%;
+    }
+    
+.realleft p{
+    font-size: 16px;
+    line-height: 1.7;
+    color: black; /* Color for the paragraphs */
+    margin-bottom: 20px;
+
+}
+
+    .imagescontainer{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        height: 550px;
+        margin: auto;
+    }
+    .subimagecontainer{
+        width: 45%;
+        height: 388px;
+        /* padding: 20px; */
+        margin: auto;
+    }
+   
+    
+    .feedbackcontainer{
+        display: flex;
+        flex-direction: row;
+        padding-top: 285px;
+        width: 100%;
+        margin: auto;
+        justify-content: space-around;
+    }
+    .feedbackleft{
+        width: 45%;
+    }
+    .feedbackleft h1{
+        font-size: 50px;
+    }
+    .feedbackleft p{
+        font-size: 30px;
+    }
+    .ratingscontainer{
+        display: flex;
+        flex-direction: row;
+    }
+    .countcontainer p{
+        font-size: 30px;
+        
+        font-weight: bold;
+    }
+    .feedbackright{
+        width: 45%;
+    }
+    .reviewername{
+        font-size: 30px;
+    }
+    .reviewerdesignation{
+        font-size: 30px;
+        color: gray;
+    }
+    .personphoto{
+        height: 75px;
+        width: 75px;
+    }
+    .reviewernamedesignation{
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+    }
+    .reviewernamedesignation p{
+        margin: 0;
+        line-height: 1.2;
+    }
+    .imagedesignation{
+        display: flex;
+        background-color: gainsboro;
+ 
+    }
+    .quotationimage{
+        height: 30px;
+        width: 30px;
+        margin-left: auto;
+    }
+    .feedbackright p{
+        font-size: 16px;
+    }
+
+    .companyright img{
+        height: 450px;
+        width: 500px;
+        max-width: 500px;
+    }
+    
+    .bestleft p {
+       
+        font-size: 16px;
+        line-height: 1.8;
+        color: black;
+    }
+    .constantright p{
+        font-size: 16px;
+        line-height: 1.7;
+        color: black; /* Color for the paragraphs */
+}
+    .locationleft p{
+        font-size: 16px;
+        line-height: 1.7;
+        color: black; /* Color for the paragraphs */
+       
+    }
+    .companyleft p2 {
+        font-size: 35px;
+        color: #2d1a6a;
+        font-weight: 5000px;
+    }
+    .companyleft p {
+        font-size: 20px;
+        line-height: 1.6;
+        color: black;
+        margin-bottom: 20px;
+    }
+    .bestleft h1 {
+        font-size: 35px;
+        color: #2d1a6a;
+        font-weight: 5000px;
+    }
+    .bestright img {
+        max-width: 100%;
+        max-height: 167%;
+    }
+    .bestleft p {
+        font-size: 25px;
+        line-height: 1.8;
+        color: black;
+    }
+    .constantright p {
+        font-size: 24px;
+        line-height: 1.7;
+        color: black;
+    }
+    .locationright iframe {
+        width: 100%;
+        height: 500px;
+    }
+    .locationleft p {
+        font-size: 25px;
+        line-height: 1.7;
+        color: black;
+    }
+    .locationleft h1 {
+        font-size: 35px;
+        line-height: 1.6;
+        font-weight: 5000px;
+        color: #2d1a6a;
+    }
+    .realright img {
+        width: 80%;
+        height: 500px;
+        margin-top: 2%;
+    }
+    .realleft p {
+        font-size: 25px;
+        line-height: 1.7;
+        color: black;
+        margin-bottom: 20px;
+    }
+    
+    .subimagecontainer img {
+        width: 100%;
+        height: 398px;
+    }
+
+}
+
+@media(min-width:2300px){
+    .aboutimg{
+        width: 100%;
+    }
+    .realestatehyderabad{
+        padding-top: 30px;
+        display: flex;
+        width: 80%;
+        margin: auto;
+        flex-direction: row;
+    }
+    .realleft{
+        width: 70%;
+    }
+    .realright{
+        width: 60%;
+        text-align: center;
+       
+        
+    }
+    .realright img{
+        width: 80%;
+        height: 300px;
+        margin-top: 2%;
+    }
+    
+.realleft p{
+    font-size: 16px;
+    line-height: 1.7;
+    color: black; /* Color for the paragraphs */
+    margin-bottom: 20px;
+
+}
+
+    .imagescontainer{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        height: 550px;
+        margin: auto;
+    }
+    .subimagecontainer{
+        width: 45%;
+        height: 540px;
+        /* padding: 20px; */
+        margin: auto;
+    }
+    .subimagecontainer img{
+        width: 100%;
+        height: 540px;
+    }
+    .feedbackcontainer{
+        display: flex;
+        flex-direction: row;
+        padding-top: 600px;
+        width: 100%;
+        margin: auto;
+        justify-content: space-around;
+    }
+    .feedbackleft{
+        width: 45%;
+    }
+    .feedbackleft h1{
+        font-size: 72px;
+    }
+    .feedbackleft p{
+        font-size: 40px;
+        color: black;
+    }
+    .ratingscontainer{
+        display: flex;
+        flex-direction: row;
+    }
+    .countcontainer p{
+        font-size: 30px;
+        
+        font-weight: bold;
+    }
+    .feedbackright{
+        width: 45%;
+    }
+    .reviewername{
+        font-size: 20px;
+    }
+    .reviewerdesignation{
+        font-size: 12px;
+        color: gray;
+    }
+    .personphoto{
+        height: 75px;
+        width: 75px;
+    }
+    .reviewernamedesignation{
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+    }
+    .reviewernamedesignation p{
+        margin: 0;
+        line-height: 1.2;
+    }
+    .imagedesignation{
+        display: flex;
+        background-color: gainsboro;
+ 
+    }
+    .quotationimage{
+        height: 30px;
+        width: 30px;
+        margin-left: auto;
+    }
+    .feedbackright p{
+        font-size: 16px;
+    }
+
+    .companyright img{
+        height: 450px;
+        width: 500px;
+        max-width: 500px;
+    }
+    
+    .bestleft p {
+       
+        font-size: 16px;
+        line-height: 1.8;
+        color: black;
+    }
+    .constantright p{
+        font-size: 16px;
+        line-height: 1.7;
+        color: black; /* Color for the paragraphs */
+}
+    .locationleft p{
+        font-size: 40px;
+        line-height: 1.7;
+        color: black; /* Color for the paragraphs */
+       
+    }
+    .companyleft p2 {
+        font-size: 40px;
+        color: #2d1a6a;
+        font-weight: 5000px;
+    }
+    .companyleft p {
+        font-size: 25px;
+        line-height: 1.6;
+        color: black;
+        margin-bottom: 20px;
+    }
+    .bestleft h1 {
+        font-size: 40px;
+        color: #2d1a6a;
+        font-weight: 5000px;
+    }
+    .bestright img {
+        max-width: 100%;
+        max-height: 252%;
+    }
+    .bestleft p {
+        font-size: 30px;
+        line-height: 1.8;
+        color: black;
+    }
+    .constantright p {
+        font-size: 30px;
+        line-height: 1.7;
+        color: black;
+    }
+    .locationright iframe {
+        width: 100%;
+        height: 500px;
+    }
+    .locationleft p {
+        font-size: 30px;
+        line-height: 1.7;
+        color: black;
+    }
+    .locationleft h1 {
+        font-size: 40px;
+        line-height: 1.6;
+        font-weight: 5000px;
+        color: #2d1a6a;
+    }
+    .realright img {
+        width: 80%;
+        height: 500px;
+        margin-top: 2%;
+    }
+    .realleft p {
+        font-size: 30px;
+        line-height: 1.7;
+        color: black;
+        margin-bottom: 20px;
+    }
+    
+    .companyleft h1 {
+        font-size: 80px;
+        margin-bottom: 15px;
+        color: #d81b60;
+        transition-delay: 0s;
+    }
+    
+}

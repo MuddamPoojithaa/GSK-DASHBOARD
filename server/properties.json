@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Real Estate",
+    "price": "200000",
+    "location": "nagole",
+    "image": "/uploads/1730963232897.jpg"
+  },
+  {
+    "id": 2,
+    "name": "GSK",
+    "price": "12000",
+    "location": "hyderabad",
+    "image": "/uploads/1732597147237.png"
+  },
+  {
+    "id": 3,
+    "name": "GSK",
+    "price": "12000",
+    "location": "hyderabad",
+    "image": "/uploads/1732602568888.png"
+  }
+]
